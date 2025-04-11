@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#content_site {
+  margin: 30px auto;
+  width: 95%;
+  border: 0.5px solid lightgray;
+  box-shadow: 0px 0px 4px rgba(128, 128, 128, 0.87),
+    0px 0px 8px rgba(211, 211, 211, 0.724), 0px 0px 3px whitesmoke inset;
+}
+
+#header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+}
+
+.header_title {
+  padding: 15px;
+}
+
+.header_title h1 {
+  text-transform: uppercase;
+
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#nav {
+  flex-basis: 500px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu .menu_item {
+  list-style: none;
+}
+
+.menu .menu_item .menu_item_link {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
