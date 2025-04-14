@@ -11,6 +11,7 @@ html {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 #content_site {
@@ -20,6 +21,8 @@ a {
   box-shadow: 0px 0px 4px rgba(128, 128, 128, 0.87),
     0px 0px 8px rgba(211, 211, 211, 0.724), 0px 0px 3px whitesmoke inset;
 }
+
+/* inicio header */
 
 #header {
   height: 80px;
@@ -41,6 +44,7 @@ a {
   font-weight: bold;
 }
 
+/* inicio menu header */
 #nav {
   flex-basis: 500px;
 }
@@ -58,3 +62,72 @@ a {
   text-transform: uppercase;
   font-size: 2rem;
 }
+
+/* fin menu header */
+
+/* fin header */
+
+/* inicio main */
+#main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#left {
+  margin-top: 30px;
+  flex-basis: 170px;
+  flex-shrink: 1;
+}
+
+.widgets .widget h3 {
+  display: block;
+  width: 161px;
+  margin: 0px auto;
+  padding: 5px;
+  font-size: 1.6rem;
+  text-align: center;
+  text-transform: capitalize;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.widget .widget_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 230px;
+  list-style: none;
+}
+
+.widget .widget_menu .widget_menu_item .widget_menu_item_link {
+  display: block;
+  height: 40px;
+  width: 135px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  background-color: whitesmoke;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+
+.widget .widget_menu .widget_menu_item .widget_menu_item_link:hover {
+  background-color: gray;
+  color: white;
+  font-style: italic;
+}
+
+.widget .widget_menu .widget_menu_item .widget_menu_item_link:active {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+}
+
+/* fin main */
