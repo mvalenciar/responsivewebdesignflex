@@ -186,6 +186,19 @@ a {
   border: 1.5px solid lightgrey;
   box-shadow: 1px 2px 3px grey, 0px 0px 3px lightgray inset;
   overflow: hidden;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+
+.gallery .gallery_img:hover {
+  transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
 }
 
 .gallery .gallery_img img {
@@ -194,11 +207,6 @@ a {
 
 .gallery .gallery_img_description {
   padding: 3px;
-  transition: all 400ms;
-  -webkit-transition: all 400ms;
-  -moz-transition: all 400ms;
-  -ms-transition: all 400ms;
-  -o-transition: all 400ms;
 }
 
 .gallery .gallery_img_description h4 {
@@ -211,10 +219,6 @@ a {
   text-transform: capitalize;
 }
 
-.gallery .gallery_img:hover .gallery_img_description {
-  background-color: black;
-  color: white;
-}
 /* fin galería de imágenes */
 
 /* fin main */
