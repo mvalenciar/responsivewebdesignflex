@@ -237,7 +237,6 @@ a {
   }
 
   #nav .menu {
-    display: none;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -247,6 +246,12 @@ a {
     height: 150px;
     top: 80px;
     right: 0px;
+    opacity: 0;
+    transition: all 400ms;
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -ms-transition: all 400ms;
+    -o-transition: all 400ms;
   }
 
   #nav .menu_item {
@@ -264,7 +269,7 @@ a {
   }
 
   #nav .check_menu_responsive:checked + .menu {
-    display: flex;
+    opacity: 1;
   }
 
   #main {
@@ -284,6 +289,17 @@ a {
 
   .gallery .gallery_img {
     flex-basis: 30%;
+    flex-shrink: 1;
+  }
+
+  #footer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .gallery .gallery_img {
+    flex-basis: 80%;
     flex-shrink: 1;
   }
 }
