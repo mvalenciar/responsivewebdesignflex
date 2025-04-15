@@ -36,9 +36,9 @@ a {
   padding: 15px;
 }
 
-.header_title h1 {
+.header_title h1,
+#footer h1 {
   text-transform: uppercase;
-
   font-size: 3rem;
   font-style: italic;
   font-weight: bold;
@@ -179,7 +179,25 @@ a {
   background-color: black;
   color: white;
 }
+/* fin galería de imágenes */
 
-/* fin galería de imagenes */
+/* inicio footer */
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+#footer h1 {
+  color: lightgrey;
+}
+
+#footer p {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+/* fin footer */
 
 /* fin main */
